@@ -76,6 +76,8 @@ bool ThemeManager::Load() {
   READ_PROGRESS_DATA(kListProgressCompleted, L"completed");
   READ_PROGRESS_DATA(kListProgressDropped, L"dropped");
   READ_PROGRESS_DATA(kListProgressOnHold, L"onhold");
+  READ_PROGRESS_DATA(kListProgressJames, L"James");
+  READ_PROGRESS_DATA(kListProgressMe, L"Me");
   READ_PROGRESS_DATA(kListProgressPlanToWatch, L"plantowatch");
   READ_PROGRESS_DATA(kListProgressSeparator, L"separator");
   READ_PROGRESS_DATA(kListProgressWatching, L"watching");

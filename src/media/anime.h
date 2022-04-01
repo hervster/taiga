@@ -66,6 +66,8 @@ enum class MyStatus {
   OnHold,
   Dropped,
   PlanToWatch,
+  James,
+  Me,
 };
 
 enum class TitleLanguage {
@@ -89,12 +91,14 @@ constexpr std::array<SeriesType, 6> kSeriesTypes{
   SeriesType::Music,
 };
 
-constexpr std::array<MyStatus, 5> kMyStatuses{
+constexpr std::array<MyStatus, 7> kMyStatuses{
   MyStatus::Watching,
   MyStatus::Completed,
   MyStatus::OnHold,
   MyStatus::Dropped,
   MyStatus::PlanToWatch,
+  MyStatus::James,
+  MyStatus::Me,
 };
 
 constexpr int kMaxEpisodeCount = 1900;

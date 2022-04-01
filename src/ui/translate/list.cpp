@@ -88,6 +88,8 @@ std::wstring TranslateMyStatus(const anime::MyStatus value, bool add_count) {
     case anime::MyStatus::OnHold: return with_count(L"On hold");
     case anime::MyStatus::Dropped: return with_count(L"Dropped");
     case anime::MyStatus::PlanToWatch: return with_count(L"Plan to watch");
+    case anime::MyStatus::James: return with_count(L"James");
+    case anime::MyStatus::Me: return with_count(L"Me");
     default: return L"";
   }
 }

@@ -110,6 +110,8 @@
 		<item name="On hold"            action="AddToList(3)"/>
 		<item name="Dropped"            action="AddToList(4)"/>
 		<item name="Plan to watch"      action="AddToList(5)"/>
+		<item name="James"      		action="AddToList(6)"/>
+		<item name="Me"      			action="AddToList(7)"/>
 	</menu>
 	
 	<!-- Right click -->
@@ -174,6 +176,8 @@
 		<item name="On hold"            action="EditStatus(3)" radio="1"/>
 		<item name="Dropped"            action="EditStatus(4)" radio="1"/>
 		<item name="Plan to watch"      action="EditStatus(5)" radio="1"/>
+		<item name="James"      action="EditStatus(6)" radio="1"/>
+		<item name="Me"      action="EditStatus(7)" radio="1"/>
 	</menu>
 	<!-- Search -->
 	<menu name="Search">

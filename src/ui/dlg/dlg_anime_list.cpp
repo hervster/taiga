@@ -1026,6 +1026,12 @@ void AnimeListDialog::ListView::DrawProgressBar(HDC hdc, RECT* rc, int index,
         case anime::MyStatus::PlanToWatch:
           list_progress_type = ui::kListProgressPlanToWatch;
           break;
+        case anime::MyStatus::James:
+          list_progress_type = ui::kListProgressJames;
+          break;
+        case anime::MyStatus::Me:
+          list_progress_type = ui::kListProgressMe;
+          break;
       }
     }
     ui::Theme.DrawListProgress(dc.Get(), &rcWatched, list_progress_type);

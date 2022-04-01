@@ -70,6 +70,8 @@ bool ExportAsMalXml(const std::wstring& path) {
       case anime::MyStatus::OnHold: return L"On-Hold";
       case anime::MyStatus::Dropped: return L"Dropped";
       case anime::MyStatus::PlanToWatch: return L"Plan to Watch";
+      case anime::MyStatus::James: return L"Dropped";
+      case anime::MyStatus::Me: return L"Plan to Watch";
     }
   };
 
@@ -97,6 +99,9 @@ bool ExportAsMalXml(const std::wstring& path) {
   XmlWriteInt(node_myinfo, L"user_total_onhold", anime::db.GetItemCount(anime::MyStatus::OnHold));
   XmlWriteInt(node_myinfo, L"user_total_dropped", anime::db.GetItemCount(anime::MyStatus::Dropped));
   XmlWriteInt(node_myinfo, L"user_total_plantowatch", anime::db.GetItemCount(anime::MyStatus::PlanToWatch));
+
+  XmlWriteInt(node_myinfo, L"user_total_james", anime::db.GetItemCount(anime::MyStatus::James));
+  XmlWriteInt(node_myinfo, L"user_total_me", anime::db.GetItemCount(anime::MyStatus::Me));
 
   for (const auto& [id, item] : anime::db.items) {
     if (item.IsInList()) {
